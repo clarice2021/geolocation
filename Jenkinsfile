@@ -10,7 +10,7 @@ pipeline {
         stage('maven package') {
             steps {
                 echo 'Hello'
-                sleep 5
+             
             }
         }
         stage('Build') {
@@ -18,7 +18,7 @@ pipeline {
                 sh 'mvn clean'
                 sh 'mvn install'
                 sh 'mvn package'
-                s
+                
             }
         }
         stage('Test') {
@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploy '
+                echo 'Deploy'
                
             }
         }
